@@ -13,3 +13,21 @@ wheels/
 .python-version
 pyproject.toml
 uv.lock
+
+# その都度解放
+# notebooks/01_*.ipynb
+notebooks/02_*.ipynb
+notebooks/03_*.ipynb
+notebooks/04_*.ipynb
+notebooks/05_*.ipynb
+notebooks/06_*.ipynb
+notebooks/07_*.ipynb
+notebooks/08_*.ipynb
+notebooks/09_*.ipynb
+notebooks/10_*.ipynb
+notebooks/11_*.ipynb
+notebooks/12_*.ipynb
+notebooks/13_*.ipynb
+notebooks/14_*.ipynb
+notebooks/15_*.ipynb
+notebooks/16_*.ipynb
