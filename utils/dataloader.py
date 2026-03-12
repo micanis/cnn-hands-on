@@ -55,7 +55,7 @@ def get_cat_dog_dataloaders(root_path, data_size="large", batch_size=32):
     test_df = df[df["split"] == "test"].sample(frac=frac, random_state=61)
 
     transform = transforms.Compose([
-        transforms.Resize(128, 128),
+        transforms.Resize((128, 128)),
         transforms.ToTensor(),
     ])
 
