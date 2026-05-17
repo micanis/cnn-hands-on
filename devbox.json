@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.0/.schema/devbox.schema.json",
+  "packages": [
+    "nodejs@20",
+    "bun@latest",
+    "go@latest",
+    "python@3.12",
+    "uv@latest",
+    "typescript-language-server@latest",
+    "gopls@latest"
+  ],
+  "env": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "shell": {
+    "init_hook": [
+      "echo '🚀 CNN Hands-on Project Environment Ready'",
+      "echo '   apps/web     - Astro frontend'",
+      "echo '   apps/api     - Go backend'",
+      "echo '   apps/slides  - Slidev presentation'",
+      "echo '   workshop     - Python notebooks'"
+    ],
+    "scripts": {
+      "dev:web": "cd apps/web && bun install && bun run dev",
+      "dev:api": "cd apps/api && go run main.go",
+      "dev:slides": "cd apps/slides && bun install && bun run dev",
+      "workshop:setup": "cd workshop && uv sync",
+      "workshop:jupyter": "cd workshop && uv run jupyter notebook"
+    }
+  }
+}

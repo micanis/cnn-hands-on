@@ -1,0 +1,27 @@
+{
+  "name": "cnn-hands-on-slide",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build:all": "bun run scripts/build-all.ts",
+    "build:all:answers": "VITE_SHOW_ANSWERS=true bun run scripts/build-all.ts",
+    "dev": "slidev slides/slide01.md --open",
+    "dev:slide01": "slidev slides/slide01.md --open",
+    "dev:slide02": "slidev slides/slide02.md --open",
+    "dev:slide03": "slidev slides/slide03.md --open",
+    "dev:answers": "VITE_SHOW_ANSWERS=true slidev slides/slide01.md --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.14.1",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "echarts": "^6.0.0",
+    "playwright-chrome": "^1.0.0",
+    "vue": "^3.5.29",
+    "vue-echarts": "^8.0.1"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.59.1"
+  }
+}
