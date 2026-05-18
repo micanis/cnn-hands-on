@@ -36,6 +36,7 @@ __pycache__/
 
 # Slidev
 .vercel/
+apps/slides/pdf/
 
 # bun
 bun.lock
