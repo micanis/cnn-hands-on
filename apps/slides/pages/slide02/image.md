@@ -18,7 +18,7 @@ layout: two-cols
 
 ::right::
 <div class="flex items-center justify-center h-full">
-<img src="/slide02/pixel-grid.png" alt="ピクセルと数値の対応" class="h-48" />
+<img src="/public/slide02/pixel-grid.png" alt="ピクセルと数値の対応" class="h-48" />
 </div>
 
 ::conc::
