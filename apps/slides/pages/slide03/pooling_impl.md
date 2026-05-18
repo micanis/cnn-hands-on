@@ -36,17 +36,6 @@ NumPyでMaxPoolingを実装せよ
 - pool_size × pool_size の領域を切り出す
 - `np.max()` で最大値を取得
 
-```python
-# 使用例
-img = np.array([
-    [1, 3, 2, 1],
-    [4, 2, 3, 1],
-    [2, 4, 1, 2],
-    [3, 1, 2, 3]
-])
-out = max_pool2d(img, pool_size=2)
-# → [[4, 3], [4, 3]]
-```
 
 ---
 layout: two-cols

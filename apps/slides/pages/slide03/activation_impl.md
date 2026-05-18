@@ -72,25 +72,8 @@ output = relu(x)
 
 <span class="font-bold">関数としても使える</span>
 
-```python
-import torch.nn.functional as F
-
-output = F.relu(x)
-```
 
 ::right::
-<span class="font-bold">その他の活性化関数</span>
-
-```python
-# Leaky ReLU（負の領域も小さな勾配）
-leaky_relu = nn.LeakyReLU(negative_slope=0.01)
-
-# Sigmoid
-sigmoid = nn.Sigmoid()
-
-# Tanh
-tanh = nn.Tanh()
-```
 
 <span class="font-bold">ポイント</span>
 
@@ -135,12 +118,6 @@ Conv2d → ReLU → MaxPool2d のパイプラインを組み、各段階のサ�
 - 畳み込み後: サイズ維持（padding=1）
 - ReLU後: サイズ変化なし
 - プーリング後: サイズ半減
-
-```python
-print(f"Conv後: {x.shape}")
-print(f"ReLU後: {x.shape}")
-print(f"Pool後: {x.shape}")
-```
 
 ::conc::
 これがCNNの1ブロック（Conv → ReLU → Pool）の基本形
