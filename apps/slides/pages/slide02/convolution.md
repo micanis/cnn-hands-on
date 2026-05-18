@@ -2,7 +2,7 @@
 layout: two-cols
 ---
 
-::header::
+::title::
 畳み込みとは
 
 ::left::
@@ -82,7 +82,7 @@ layout: two-cols
 
 ---
 
-::header::
+::title::
 カーネル（フィルタ）
 
 ::default::
@@ -111,7 +111,7 @@ CNNではカーネルの値を学習によって自動で獲得する
 layout: two-rows
 ---
 
-::header::
+::title::
 畳み込みの数式
 
 ::top::
@@ -137,7 +137,7 @@ $$
 layout: two-cols
 ---
 
-::header::
+::title::
 ストライドとパディング
 
 ::left::
@@ -167,8 +167,8 @@ layout: two-cols
 
 ---
 
-::header::
-実演
+::title::
+畳み込みの実演
 
 ::default::
-<div class="h-full w-full flex items-center justify-center"><h2>Colabで見てみよう!</h2></div>
+<ConvolutionDemo />

@@ -2,7 +2,7 @@
 layout: two-cols
 ---
 
-::header::
+::title::
 演習：MaxPoolingを手動で実装
 
 ::left::
@@ -52,7 +52,7 @@ out = max_pool2d(img, pool_size=2)
 layout: two-cols
 ---
 
-::header::
+::title::
 PyTorchでのプーリング
 
 ::left::
@@ -90,7 +90,7 @@ pool = nn.AvgPool2d(kernel_size=2, stride=2)
 layout: two-cols
 ---
 
-::header::
+::title::
 発展演習：AveragePoolingも実装
 
 ::left::

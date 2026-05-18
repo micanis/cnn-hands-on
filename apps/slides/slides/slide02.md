@@ -1,5 +1,5 @@
 ---
-theme: ../theme
+theme: tut
 layout: cover
 ---
 
@@ -16,7 +16,7 @@ CNNを用いた画像認識の仕組みと実装
 layout: two-cols
 ---
 
-::header::
+::title::
 授業計画
 
 ::left::
@@ -46,7 +46,7 @@ layout: two-cols
 layout: toc
 ---
 
-::header::
+::title::
 目次
 
 ---
@@ -57,7 +57,7 @@ layout: section
 
 ---
 
-::header::
+::title::
 前回の復習
 
 ::default::
@@ -84,7 +84,7 @@ layout: section
 # 配列操作を学ぶ
 
 ---
-src: ./pages/slide02/array.md
+src: ../pages/slide02/array.md
 ---
 
 ---
@@ -94,7 +94,7 @@ layout: section
 # 画像とは
 
 ---
-src: ./pages/slide02/image.md
+src: ../pages/slide02/image.md
 ---
 
 ---
@@ -104,7 +104,7 @@ layout: section
 # 畳み込み(Convolution)とは
 
 ---
-src: ./pages/slide02/convolution.md
+src: ../pages/slide02/convolution.md
 ---
 
 ---
@@ -114,7 +114,7 @@ layout: section
 # 畳み込みの実装
 
 ---
-src: ./pages/slide02/implementation.md
+src: ../pages/slide02/implementation.md
 ---
 
 ---
@@ -124,5 +124,5 @@ layout: section
 # まとめ
 
 ---
-src: ./pages/slide02/summary.md
+src: ../pages/slide02/summary.md
 ---

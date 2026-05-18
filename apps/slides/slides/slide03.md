@@ -1,5 +1,5 @@
 ---
-theme: ../theme
+theme: tut
 layout: cover
 ---
 
@@ -16,7 +16,7 @@ CNNを用いた画像認識の仕組みと実装
 layout: two-cols
 ---
 
-::header::
+::title::
 授業計画
 
 ::left::
@@ -46,7 +46,7 @@ layout: two-cols
 layout: toc
 ---
 
-::header::
+::title::
 目次
 
 ---
@@ -57,7 +57,7 @@ layout: section
 
 ---
 
-::header::
+::title::
 前回の復習
 
 ::default::
@@ -84,7 +84,7 @@ layout: section
 # プーリング層とは
 
 ---
-src: ./pages/slide03/pooling.md
+src: ../pages/slide03/pooling.md
 ---
 
 ---
@@ -94,7 +94,7 @@ layout: section
 # プーリングの実装
 
 ---
-src: ./pages/slide03/pooling_impl.md
+src: ../pages/slide03/pooling_impl.md
 ---
 
 ---
@@ -104,7 +104,7 @@ layout: section
 # 活性化関数とは
 
 ---
-src: ./pages/slide03/activation.md
+src: ../pages/slide03/activation.md
 ---
 
 ---
@@ -114,7 +114,7 @@ layout: section
 # 活性化関数の実装
 
 ---
-src: ./pages/slide03/activation_impl.md
+src: ../pages/slide03/activation_impl.md
 ---
 
 ---
@@ -124,5 +124,5 @@ layout: section
 # まとめ
 
 ---
-src: ./pages/slide03/summary.md
+src: ../pages/slide03/summary.md
 ---

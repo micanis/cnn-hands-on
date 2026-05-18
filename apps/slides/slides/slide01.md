@@ -1,5 +1,5 @@
 ---
-theme: ../theme
+theme: tut
 layout: cover
 ---
 
@@ -16,7 +16,7 @@ CNNを用いた画像認識の仕組みと実装
 layout: two-cols
 ---
 
-::header::
+::title::
 授業計画
 
 ::left::
@@ -46,7 +46,7 @@ layout: two-cols
 layout: toc
 ---
 
-::header::
+::title::
 目次
 
 ---
@@ -58,7 +58,7 @@ layout: section
 ---
 
 
-::header::
+::title::
 本授業の位置づけ
 
 ::default::
@@ -78,7 +78,7 @@ layout: section
 
 ---
 
-::header::
+::title::
 学べるもの
 
 ::default::
@@ -97,7 +97,7 @@ layout: section
   
 ---
 
-::header::
+::title::
 必要なもの
 
 ::default::
@@ -119,7 +119,7 @@ layout: section
 layout: two-cols
 ---
 
-::header::
+::title::
 Google Colaboratory (Colab)
 
 ::left::
@@ -140,7 +140,7 @@ Google Colaboratory (Colab)
 
 ---
 
-::header::
+::title::
 Colabの使い方 (ハンズオン)
 
 ::default::
@@ -169,7 +169,7 @@ layout: section
 
 ---
 
-::header::
+::title::
 CNN（畳み込みニューラルネットワーク）とは
 
 ::default::
@@ -185,7 +185,7 @@ CNNは、人間の<span class="font-bold">視覚野の仕組み</span>をモデ�
 
 ---
 
-::header::
+::title::
 処理の流れ
 
 ::default::
@@ -201,7 +201,7 @@ CNNは、人間の<span class="font-bold">視覚野の仕組み</span>をモデ�
       <div class="flex flex-col items-center flex-1">
         <span class="text-xs font-bold mb-2 text-gray-500">1. 入力</span>
         <div class="relative w-30 h-30 border-2 border-gray-300 rounded bg-white p-1 shadow-sm">
-          <img src="./assets/slide01/cat.jpg" class="w-full h-full object-cover rounded-sm" />
+          <img src="./public/slide01/cat.jpg" class="w-full h-full object-cover rounded-sm" />
         </div>
         <span class="mt-2 text-[10px] text-gray-400">画像データ</span>
       </div>
@@ -298,12 +298,12 @@ layout: section
 layout: two-cols
 ---
 
-::header::
+::title::
 画像分類とは
 
 ::left::
 <div class="w-full h-full flex justify-center">
-    <img src="./assets/slide01/cat.jpg">
+    <img src="./public/slide01/cat.jpg">
 </div>
 
 ::right::
@@ -326,10 +326,18 @@ A. <span v-click class="text-2xl">猫</span>
 人間には簡単でも、コンピュータには長年の難問だった
 
 ---
+
+::title::
+CNNによる画像分類のデモ
+
+::default::
+<ClassificationDemo />
+
+---
 layout: two-cols
 ---
 
-::header::
+::title::
 どのように分類するか
 
 ::left::
@@ -352,20 +360,20 @@ layout: two-cols
 layout: three-cols
 ---
 
-::header::
+::title::
 今回のコード一覧
 
 ::left::
 <CodePane>
 
-<<< ./code/slide01/01_intro.py#part1
+<<< ../code/slide01/01_intro.py#part1
 
 </CodePane>
 
 ::center::
 <CodePane>
 
-<<< ./code/slide01/01_intro.py#part2
+<<< ../code/slide01/01_intro.py#part2
 
 </CodePane>
 
@@ -386,7 +394,7 @@ layout: section
 
 ---
 
-::header::
+::title::
 本日のまとめ
 
 ::default::
@@ -411,5 +419,5 @@ layout: section
   学習済みのモデルを使って、実際にAIが画像を分類する推論プロセスを体験した
 
 ---
-src: ./pages/slide01/appendix.md
+src: ../pages/slide01/appendix.md
 ---

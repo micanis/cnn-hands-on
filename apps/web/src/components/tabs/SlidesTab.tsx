@@ -21,11 +21,11 @@ function SlidesTab({ isAdmin = false, slides, isLoading, onRefresh, locale }: Sl
   const handleAction = async (fileName: string, action: 'view' | 'download') => {
     if (!fileName) return;
     try {
-      const url = storageApi.getDownloadUrl(fileName, action);
-
       if (action === 'view') {
-        window.open(url, '_blank');
+        const slideName = fileName.replace(/\.pdf$/i, '');
+        window.open(`https://cnn-hands-on-slides.micanis.dev/${slideName}`, '_blank');
       } else {
+        const url = storageApi.getDownloadUrl(fileName, 'download');
         const fileRes = await fetch(url);
         const blob = await fileRes.blob();
         const localUrl = window.URL.createObjectURL(blob);

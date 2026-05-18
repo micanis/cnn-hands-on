@@ -14,10 +14,8 @@
   },
   "dependencies": {
     "@slidev/cli": "^52.14.1",
-    "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest",
     "echarts": "^6.0.0",
-    "playwright-chrome": "^1.0.0",
+    "slidev-theme-tut": "github:micanis/slidev-theme-tut",
     "vue": "^3.5.29",
     "vue-echarts": "^8.0.1"
   },

@@ -2,7 +2,7 @@
 layout: two-cols
 ---
 
-::header::
+::title::
 プーリングとは
 
 ::left::
@@ -26,7 +26,7 @@ layout: two-cols
 layout: two-cols
 ---
 
-::header::
+::title::
 MaxPooling vs AveragePooling
 
 ::left::
@@ -48,7 +48,7 @@ MaxPooling vs AveragePooling
 
 ---
 
-::header::
+::title::
 プーリングのパラメータ
 
 ::default::
@@ -74,7 +74,7 @@ $$
 
 ---
 
-::header::
+::title::
 実演
 
 ::default::

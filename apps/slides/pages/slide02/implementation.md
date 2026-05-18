@@ -2,7 +2,7 @@
 layout: two-cols
 ---
 
-::header::
+::title::
 演習：畳み込みを手動で実装
 
 ::left::
@@ -51,7 +51,7 @@ out = conv2d(img, kernel, padding=1)
 layout: two-cols
 ---
 
-::header::
+::title::
 PyTorchでの畳み込み
 
 ::left::

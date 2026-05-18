@@ -2,7 +2,7 @@
 layout: default
 ---
 
-::header::
+::title::
 なぜ配列操作を学ぶのか
 
 ::default::
@@ -17,7 +17,7 @@ layout: default
 layout: two-cols
 ---
 
-::header::
+::title::
 Pythonリストの基礎
 
 ::left::
@@ -53,7 +53,7 @@ print(numbers[::2])   # [1, 3, 5]
 layout: two-cols
 ---
 
-::header::
+::title::
 演習1: Pythonリスト
 
 ::left::
@@ -84,7 +84,7 @@ print(ex01, ex02, ex03)
 layout: two-cols
 ---
 
-::header::
+::title::
 NumPy配列の基礎
 
 ::left::
@@ -123,7 +123,7 @@ arange = np.arange(0, 10, 2)  # [0 2 4 6 8]
 layout: two-cols
 ---
 
-::header::
+::title::
 演習2: NumPy配列の作成
 
 ::left::
@@ -151,7 +151,7 @@ print(ex01, ex02_s, ex02_d, ex03)
 layout: two-cols
 ---
 
-::header::
+::title::
 多次元配列（2次元）
 
 ::left::
@@ -187,10 +187,18 @@ print(matrix[:, 0])  # [1, 4]
 - `[:, 列]` で列全体
 
 ---
+
+::title::
+配列インデックスの可視化
+
+::default::
+<ArrayIndexDemo />
+
+---
 layout: two-cols
 ---
 
-::header::
+::title::
 演習3: 多次元配列の操作
 
 ::left::
@@ -226,7 +234,7 @@ print(ex01, ex02, ex03, ex04)
 layout: two-cols
 ---
 
-::header::
+::title::
 配列の演算
 
 ::left::
@@ -266,7 +274,7 @@ print(a.max())   # 3
 layout: two-cols
 ---
 
-::header::
+::title::
 演習4: 配列の演算
 
 ::left::

@@ -2,7 +2,7 @@
 layout: two-cols
 ---
 
-::header::
+::title::
 演習：ReLUを手動で実装
 
 ::left::
@@ -51,7 +51,7 @@ out = relu(feature_map)
 layout: two-cols
 ---
 
-::header::
+::title::
 PyTorchでの活性化関数
 
 ::left::
@@ -101,7 +101,7 @@ tanh = nn.Tanh()
 layout: two-cols
 ---
 
-::header::
+::title::
 発展演習：Conv → ReLU → Pool
 
 ::left::

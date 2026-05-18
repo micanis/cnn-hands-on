@@ -2,7 +2,7 @@
 layout: default
 ---
 
-::header::
+::title::
 本日のまとめ
 
 ::default::

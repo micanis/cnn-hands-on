@@ -2,7 +2,7 @@
 layout: two-cols
 ---
 
-::header::
+::title::
 活性化関数とは
 
 ::left::
@@ -51,7 +51,7 @@ $$
 layout: three-cols
 ---
 
-::header::
+::title::
 代表的な活性化関数
 
 ::left::
@@ -85,7 +85,7 @@ layout: three-cols
 layout: two-cols
 ---
 
-::header::
+::title::
 ReLUが主流な理由
 
 ::left::
@@ -112,7 +112,7 @@ $$
 
 ---
 
-::header::
+::title::
 実演
 
 ::default::

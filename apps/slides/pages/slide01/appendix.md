@@ -8,7 +8,7 @@ layout: section
 layout: two-cols
 ---
 
-::header::
+::title::
 コード解説①
 
 ::left::
@@ -31,7 +31,7 @@ layout: two-cols
 layout: two-cols
 ---
 
-::header::
+::title::
 コード解説②
 
 ::left::
@@ -53,7 +53,7 @@ layout: two-cols
 layout: two-cols
 ---
 
-::header::
+::title::
 コード解説③
 
 ::left::
@@ -78,7 +78,7 @@ layout: two-cols
 layout: two-cols
 ---
 
-::header::
+::title::
 コード解説④
 
 ::left::

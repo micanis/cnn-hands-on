@@ -2,7 +2,7 @@
 layout: two-cols
 ---
 
-::header::
+::title::
 画像は数値である
 
 ::left::
@@ -18,54 +18,28 @@ layout: two-cols
 
 ::right::
 <div class="flex items-center justify-center h-full">
-<img src="/assets/slide02/pixel-grid.png" alt="ピクセルと数値の対応" class="h-48" />
+<img src="/slide02/pixel-grid.png" alt="ピクセルと数値の対応" class="h-48" />
 </div>
 
 ::conc::
 画像の最小単位を<span class="font-bold">ピクセル</span>と呼び、各ピクセルが数値を持つ
 
 ---
-layout: three-cols
----
 
-::header::
-画像の種類
+::title::
+RGBチャンネルの可視化
 
-::left::
-<div class="text-center">
-<span class="font-bold">バイナリ画像</span>
-<img src="/assets/slide02/binary-image.png" alt="バイナリ画像" class="h-32 mx-auto my-2" />
-
-- 0（白）と1（黒）のみ
-- 1チャンネル
-</div>
-
-::center::
-<div class="text-center">
-<span class="font-bold">グレースケール画像</span>
-<img src="/assets/slide02/grayscale-image.png" alt="グレースケール画像" class="h-32 mx-auto my-2" />
-
-- 0〜255の256段階
-- 1チャンネル
-</div>
-
-::right::
-<div class="text-center">
-<span class="font-bold">カラー画像（RGB）</span>
-<img src="/assets/slide02/color-image.png" alt="カラー画像" class="h-32 mx-auto my-2" />
-
-- R・G・B各0〜255
-- 3チャンネル
-</div>
+::default::
+<ImageChannelDemo />
 
 ::conc::
-画像には主に3つの種類がある
+カラー画像は R・G・B 各0〜255の3チャンネルで構成される
 
 ---
 layout: two-cols
 ---
 
-::header::
+::title::
 PyTorchライブラリでの型
 
 ::left::
@@ -103,7 +77,7 @@ print(tensor.shape)
 layout: two-cols
 ---
 
-::header::
+::title::
 演習の準備：画像を配列として読み込む
 
 ::left::
@@ -142,7 +116,7 @@ arr[100, 50, 0]
 layout: two-cols
 ---
 
-::header::
+::title::
 演習1：グレースケール変換（手動）
 
 ::left::
@@ -174,7 +148,7 @@ RGB値の平均を取ってグレースケール画像を作成せよ
 layout: two-cols
 ---
 
-::header::
+::title::
 演習2：画像の反転（手動）
 
 ::left::
@@ -206,7 +180,7 @@ a[::-1]  # [5, 4, 3, 2, 1]
 layout: two-cols
 ---
 
-::header::
+::title::
 演習3：明るさ調整（手動）
 
 ::left::
@@ -242,7 +216,7 @@ plt.show()
 
 ---
 
-::header::
+::title::
 暇な人向け
 
 ::default::
@@ -261,7 +235,7 @@ word = "
 layout: two-cols
 ---
 
-::header::
+::title::
 ライブラリを使うとどうなる？
 
 ::left::
