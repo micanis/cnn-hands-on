@@ -54,20 +54,39 @@ MaxPooling vs AveragePooling
 ::default::
 <span class="font-bold">典型的な設定</span>
 
-| パラメータ | 値 | 意味 |
-|-----------|---|------|
-| kernel_size | 2 | 2×2の領域をまとめる |
-| stride | 2 | 2pxずつ移動（重なりなし） |
+<table class="text-sm text-left border-collapse">
+  <thead>
+    <tr class="bg-blue-100">
+      <th class="px-3 py-1 border">パラメータ</th>
+      <th class="px-3 py-1 border">値</th>
+      <th class="px-3 py-1 border">意味</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="px-3 py-1 border font-mono">kernel_size</td>
+      <td class="px-3 py-1 border text-center font-bold">2</td>
+      <td class="px-3 py-1 border">2×2の領域をまとめる</td>
+    </tr>
+    <tr class="bg-gray-50">
+      <td class="px-3 py-1 border font-mono">stride</td>
+      <td class="px-3 py-1 border text-center font-bold">2</td>
+      <td class="px-3 py-1 border">2pxずつ移動（重なりなし）</td>
+    </tr>
+  </tbody>
+</table>
 
 <br>
 
 <span class="font-bold">出力サイズの計算</span>
 
-$$
-\text{出力サイズ} = \frac{\text{入力サイズ}}{\text{stride}} = \frac{H}{2}
-$$
+<div class="text-sm mt-2">
+
+$\text{出力サイズ} = \frac{\text{入力サイズ}}{\text{stride}} = \frac{H}{2}$
 
 例: 入力 28×28、kernel=2、stride=2 → 出力 14×14
+
+</div>
 
 ::conc::
 プーリングには学習するパラメータがない（単純な演算のみ）

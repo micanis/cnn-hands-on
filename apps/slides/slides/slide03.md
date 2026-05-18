@@ -22,7 +22,7 @@ layout: two-cols
 ::left::
 - 第1回 ガイダンス / 犬猫の分類を試してみよう
 - 第2回 画像とは / 畳み込みの実装
-- <span class="text-blue-500" >第3回 活性化関数とは / プーリング層の実装</span>
+- <span class="text-blue-500" >第3回 プーリング層の実装 / 活性化関数とは</span>
 - 第4回 全結合層の実装 / CNNのモデル構築
 - 第5回 損失関数とは / パラメータ更新の基礎
 - 第6回 モデルの学習ループ実装と精度評価
@@ -76,6 +76,16 @@ layout: section
 3. <span class="font-bold">今回学ぶこと</span>
 
     → 畳み込み後の処理：<span class="text-blue-500 font-bold">プーリング</span>と<span class="text-blue-500 font-bold">活性化関数</span>
+
+---
+layout: section
+---
+
+# 環境構築の更新
+
+---
+src: ../pages/slide03/env_setting.md
+---
 
 ---
 layout: section
