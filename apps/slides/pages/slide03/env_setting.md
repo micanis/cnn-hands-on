@@ -7,7 +7,7 @@ layout: two-cols
 
 ::left::
 
-<CodePane>
+<Transform :scale="0.8">
 
 ```python
 from google.colab import drive
@@ -74,7 +74,7 @@ print("Ready!!")
 os.chdir(drive_dir)
 ```
 
-</CodePane>
+</Transform>
 
 ::right::
 詳しくは授業中の指示に従ってください

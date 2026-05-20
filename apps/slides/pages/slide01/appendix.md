@@ -13,11 +13,11 @@ layout: two-cols
 
 ::left::
 
-<CodePane>
+<Transform :scale="0.8">
 
 <<< ../../code/slide01/01_intro.py#cell02
 
-</CodePane>
+</Transform>
 
 ::right::
 何をしているか
@@ -36,11 +36,11 @@ layout: two-cols
 
 ::left::
 
-<CodePane>
+<Transform :scale="0.8">
 
 <<< ../../code/slide01/01_intro.py#cell03
 
-</CodePane>
+</Transform>
 
 ::right::
 何をしているか
@@ -58,11 +58,11 @@ layout: two-cols
 
 ::left::
 
-<CodePane>
+<Transform :scale="0.8">
 
 <<< ../../code/slide01/01_intro.py#cell04
 
-</CodePane>
+</Transform>
 
 ::right::
 何をしているか
@@ -83,11 +83,11 @@ layout: two-cols
 
 ::left::
 
-<CodePane>
+<Transform :scale="0.8">
 
 <<< ../../code/slide01/01_intro.py#cell05
 
-</CodePane>
+</Transform>
 
 ::right::
 何をしているか

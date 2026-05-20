@@ -364,18 +364,18 @@ layout: three-cols
 今回のコード一覧
 
 ::left::
-<CodePane>
+<Transform :scale="0.8">
 
 <<< ../code/slide01/01_intro.py#part1
 
-</CodePane>
+</Transform>
 
 ::center::
-<CodePane>
+<Transform :scale="0.8">
 
 <<< ../code/slide01/01_intro.py#part2
 
-</CodePane>
+</Transform>
 
 ::right::
 **何をしているか**

@@ -9,6 +9,7 @@
     "dev:slide01": "slidev slides/slide01.md --open",
     "dev:slide02": "slidev slides/slide02.md --open",
     "dev:slide03": "slidev slides/slide03.md --open",
+    "dev:slide04": "slidev slides/slide04.md --open",
     "dev:answers": "VITE_SHOW_ANSWERS=true slidev slides/slide01.md --open",
     "export": "slidev export"
   },
