@@ -42,5 +42,5 @@ apps/slides/pdf/
 bun.lock
 
 # Workshop: 04以降のnotebookは未公開
-workshop/notebooks/0[5-9]_*.ipynb
-workshop/answers/0[5-9]_*.ipynb
+workshop/notebooks/0[6-9]_*.ipynb
+workshop/answers/0[6-9]_*.ipynb
