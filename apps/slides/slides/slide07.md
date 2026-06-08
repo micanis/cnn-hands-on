@@ -26,7 +26,7 @@ layout: two-cols
 - 第4回 全結合層の実装 / ネットワークの構築
 - 第5回 損失関数と最適化 / MNISTで学習と推論
 - 第6回 犬猫分類の学習と精度評価
-- <span class="font-bold text-blue-500">第7回 転移学習の実装と精度評価</span>
+- <span class="font-bold text-blue-500">第7回 ResNetと転移学習による精度改善</span>
 - 第8回 物体検出タスクの基礎及び推論
 
 ::right::
@@ -75,16 +75,46 @@ layout: section
 
 4. <span class="font-bold">今回学ぶこと</span>
 
-    → 第六回のコードを拡張し、<span class="text-blue-500 font-bold">事前学習済みResNet</span>で精度改善を目指す
+    → 自作ResNetでネットワークを深くし、その後<span class="text-blue-500 font-bold">転移学習</span>でさらに精度を上げる
 
 ---
 layout: section
 ---
 
-# 転移学習による精度改善
+# ResNetとは
 
 ---
-src: ../pages/slide07/transfer_learning.md
+src: ../pages/slide07/resnet_intro.md
+---
+
+---
+layout: section
+---
+
+# ResNetの実装
+
+---
+src: ../pages/slide07/resnet_impl.md
+---
+
+---
+layout: section
+---
+
+# 転移学習とは
+
+---
+src: ../pages/slide07/transfer_intro.md
+---
+
+---
+layout: section
+---
+
+# 転移学習の実装
+
+---
+src: ../pages/slide07/transfer_impl.md
 ---
 
 ---
@@ -94,27 +124,44 @@ layout: section
 # まとめ
 
 ---
+layout: two-cols
+---
 
 ::title::
 まとめ
 
-::default::
-- **転移学習**
+::left::
+<div class="space-y-4 text-xl leading-snug">
+  <div>
+    <div class="font-bold">自作ResNet18</div>
+    <div>残差接続を使い、SimpleCNNより深いネットワークで犬猫分類を行った</div>
+  </div>
 
-  ImageNetで学習済みの特徴抽出器を、犬猫分類に再利用した
+  <div>
+    <div class="font-bold">残差接続</div>
+    <div><code>out + identity</code> によって、深いモデルでも特徴と勾配を伝えやすくした</div>
+  </div>
 
-- **ResNet18**
+  <div>
+    <div class="font-bold">精度比較</div>
+    <div>自作ResNetは85-90%前後、転移学習は98-100%前後を目標に比較する</div>
+  </div>
+</div>
 
-  `torchvision.models.resnet18(weights=...)` で事前学習済みモデルを読み込んだ
+::right::
+<div class="space-y-4 text-xl leading-snug">
+  <div>
+    <div class="font-bold">転移学習</div>
+    <div>ImageNetで学習済みのResNet18を使い、画像特徴を再利用した</div>
+  </div>
 
-- **最終層の差し替え**
+  <div>
+    <div class="font-bold">最終層の差し替え</div>
+    <div><code>model.fc</code> を犬猫2クラス分類用に置き換え、分類器だけを学習した</div>
+  </div>
 
-  `model.fc` を2クラス分類用の `nn.Linear` に置き換えた
-
-- **精度評価**
-
-  SimpleCNNと同じ指標で比較し、転移学習による改善を確認する
-
-- **次回予告**
-
-  <span class="text-blue-500 font-bold">物体検出</span>に進み、画像の中の「どこに何があるか」を扱う
+  <div>
+    <div class="font-bold">次回予告</div>
+    <div>物体検出に進み、画像の中の「どこに何があるか」を扱う</div>
+  </div>
+</div>
