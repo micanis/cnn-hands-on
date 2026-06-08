@@ -26,7 +26,7 @@ layout: two-cols
 - 第4回 全結合層の実装 / ネットワークの構築
 - 第5回 損失関数と最適化 / MNISTで学習と推論
 - 第6回 犬猫分類の学習と精度評価
-- <span class="font-bold text-blue-500">第7回 ResNetによる犬猫分類の改善</span>
+- <span class="font-bold text-blue-500">第7回 転移学習の実装と精度評価</span>
 - 第8回 物体検出タスクの基礎及び推論
 
 ::right::
@@ -75,16 +75,16 @@ layout: section
 
 4. <span class="font-bold">今回学ぶこと</span>
 
-    → 第六回のコードを拡張し、<span class="text-blue-500 font-bold">ResNet型のネットワーク</span>で精度改善を目指す
+    → 第六回のコードを拡張し、<span class="text-blue-500 font-bold">事前学習済みResNet</span>で精度改善を目指す
 
 ---
 layout: section
 ---
 
-# SimpleCNNからResNetへ
+# 転移学習による精度改善
 
 ---
-src: ../pages/slide07/resnet16.md
+src: ../pages/slide07/transfer_learning.md
 ---
 
 ---
@@ -99,21 +99,21 @@ layout: section
 まとめ
 
 ::default::
-- **残差接続**
+- **転移学習**
 
-  入力 `x` を出力に足し戻すことで、深いネットワークを学習しやすくした
+  ImageNetで学習済みの特徴抽出器を、犬猫分類に再利用した
 
-- **BasicBlock**
+- **ResNet18**
 
-  Conv → BN → ReLU → Conv → BN にショートカットを加え、再利用できる部品にした
+  `torchvision.models.resnet18(weights=...)` で事前学習済みモデルを読み込んだ
 
-- **ResNet16**
+- **最終層の差し替え**
 
-  第六回の Dataset / DataLoader / 学習ループを保ち、モデルだけを差し替えた
+  `model.fc` を2クラス分類用の `nn.Linear` に置き換えた
 
 - **精度評価**
 
-  SimpleCNNと同じ指標で比較し、モデル変更による改善を確認する
+  SimpleCNNと同じ指標で比較し、転移学習による改善を確認する
 
 - **次回予告**
 
