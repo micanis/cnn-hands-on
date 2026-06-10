@@ -8,7 +8,7 @@ Roboflowで行う作業
 ::left::
 <span class="font-bold">データセット作成の流れ</span>
 
-1. プロジェクトを作成する
+1. [プロジェクトに参加する](https://app.roboflow.com/join/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3Jrc3BhY2VJZCI6ImVEQnQ4VGNQVzdQTUZVNFpBS0ZvZ2duTkVuajEiLCJyb2xlIjoib3duZXIiLCJpbnZpdGVyIjoieWFtYW5ha2FoYXJ1a2lfaXRfc2FAZy5uZWVjLmFjLmpwIiwiaWF0IjoxNzgxMDczMDg5fQ.MJUEqv85K0mpCSD3a_kBKDf-YILXZQaBQ2TyNfO1JE4)
 2. クラス `face` を登録する
 3. 画像をアップロードする
 4. バウンディングボックスを付ける
