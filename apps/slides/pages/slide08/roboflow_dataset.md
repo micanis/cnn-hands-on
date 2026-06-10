@@ -53,13 +53,6 @@ Roboflowを使うと、画像管理、アノテーション、形式変換をま
 
   グー、チョキ、手の甲、手が写っていない画像も少し入れる
 
-- **個人情報に注意する**
-
-  不要な顔、名札、画面、個人が特定される情報は写さないようにする
-
-::conc::
-同じような画像ばかりだと、実際のWebカメラ画像でうまく動きにくい
-
 ---
 layout: two-cols
 ---
@@ -98,40 +91,3 @@ layout: two-cols
 ::conc::
 アノテーションのルールが揃うほど、モデルは学習しやすくなる
 
----
-layout: two-cols
----
-
-::title::
-よいボックスと悪いボックス
-
-::left::
-<span class="font-bold">よい例</span>
-
-<div class="relative w-72 h-44 border-2 border-gray-300 bg-gray-50 mx-auto">
-  <div class="absolute left-24 top-8 w-24 h-28 border-4 border-blue-500"></div>
-  <div class="absolute left-24 top-2 px-2 py-1 bg-blue-500 text-white text-sm font-bold">open_palm</div>
-</div>
-
-<br>
-
-- 手の範囲に近い
-- 余白が少ない
-- 対象が明確
-
-::right::
-<span class="font-bold">悪い例</span>
-
-<div class="relative w-72 h-44 border-2 border-gray-300 bg-gray-50 mx-auto">
-  <div class="absolute left-10 top-5 w-48 h-36 border-4 border-red-500"></div>
-  <div class="absolute left-10 top-0 px-2 py-1 bg-red-500 text-white text-sm font-bold">open_palm</div>
-</div>
-
-<br>
-
-- 腕や背景を大きく含む
-- 手の位置が曖昧
-- 学習したい範囲がぶれる
-
-::conc::
-ボックスは「モデルに見つけてほしい範囲」を教える教師データ

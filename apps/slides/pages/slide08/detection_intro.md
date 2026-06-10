@@ -1,60 +1,40 @@
 ---
-layout: two-cols
+layout: default
 ---
 
 ::title::
-分類と検出の違い
+検出 (Detection) とは
 
-::left::
-<span class="font-bold">画像分類</span>
-
-```text
-Input:  画像
-Output: クラス
-```
-
-<br>
-
-- 画像全体に1つのラベルを付ける
-- 犬か猫か、数字が何かを判定する
-- 物体の位置は扱わない
-
-<br>
-
-```text
-dog: 0.92
-cat: 0.08
-```
-
-::right::
-<span class="font-bold">物体検出</span>
-
-```text
-Input:  画像
-Output: クラス + 位置
-```
+::default::
+<div class="grid grid-cols-2 gap-8 text-xl">
+  <div>
+    <div class="font-bold mb-3">分類</div>
+    <ul>
+      <li>画像全体に1つのラベルを付ける</li>
+      <li>何が写っているかを答える</li>
+      <li>例: この画像は犬</li>
+    </ul>
+  </div>
+  <div>
+    <div class="font-bold mb-3">検出</div>
+    <ul>
+      <li>物体ごとにラベルと位置を出す</li>
+      <li>何がどこにあるかを答える</li>
+      <li>例: 手のひらがこの範囲にある</li>
+    </ul>
+  </div>
+</div>
 
 <br>
 
-- 画像内の物体を探す
-- それぞれの物体のクラスを判定する
-- 物体の位置を四角形で表す
-
-<br>
-
-```text
-open_palm: 0.87, box=(120, 80, 260, 250)
-```
-
-::conc::
-分類は「何が写っているか」、検出は「どこに何があるか」を扱う
+<span class="text-xl font-bold">物体検出は、クラス分類に「位置の予測」を加えたタスク</span>
 
 ---
 layout: two-cols
 ---
 
 ::title::
-検出結果の3つの情報
+検出結果の見方
 
 ::left::
 <span class="font-bold">検出モデルの出力</span>
@@ -87,8 +67,6 @@ box: x1=150, y1=70, x2=310, y2=260
   <div class="absolute left-20 top-1 px-2 py-1 bg-blue-500 text-white text-sm font-bold">open_palm 0.83</div>
 </div>
 
-::conc::
-検出では「何か」だけでなく、画像内の位置も学習する
 
 ---
 
