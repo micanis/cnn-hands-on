@@ -31,7 +31,7 @@ import random
 from google.colab import files
 
 from utils.network import SimpleCNN  # pyright: ignore[reportMissingImports]
-from utils.dataloader import get_cat_dog_dataloaders  # pyright: ignore[reportMissingImports]
+from workshop.utils.dataloader import get_cat_dog_dataloaders  # pyright: ignore[reportMissingImports]
 
 # #region cell02
 ###
