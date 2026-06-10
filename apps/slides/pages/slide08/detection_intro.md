@@ -20,7 +20,7 @@ layout: default
     <ul>
       <li>物体ごとにラベルと位置を出す</li>
       <li>何がどこにあるかを答える</li>
-      <li>例: 手のひらがこの範囲にある</li>
+      <li>例: 顔がこの範囲にある</li>
     </ul>
   </div>
 </div>
@@ -55,7 +55,7 @@ layout: two-cols
 <span class="font-bold">今回の例</span>
 
 ```text
-class: open_palm
+class: face
 confidence: 0.83
 box: x1=150, y1=70, x2=310, y2=260
 ```
@@ -64,7 +64,7 @@ box: x1=150, y1=70, x2=310, y2=260
 
 <div class="relative w-72 h-44 border-2 border-gray-300 bg-gray-50 mx-auto">
   <div class="absolute left-20 top-7 w-28 h-28 border-4 border-blue-500"></div>
-  <div class="absolute left-20 top-1 px-2 py-1 bg-blue-500 text-white text-sm font-bold">open_palm 0.83</div>
+  <div class="absolute left-20 top-1 px-2 py-1 bg-blue-500 text-white text-sm font-bold">face 0.83</div>
 </div>
 
 
@@ -76,20 +76,20 @@ box: x1=150, y1=70, x2=310, y2=260
 ::default::
 <div class="text-2xl leading-relaxed">
 
-今回作るモデルは、人物の開いた手のひらを検出します。
+今回作るモデルは、人物の顔を検出します。
 
 </div>
 
 <br>
 
-- 検出クラスは <span class="font-bold text-blue-500">`open_palm`</span> の1つ
+- 検出クラスは <span class="font-bold text-blue-500">`face`</span> の1つ
 
-- パーの手だけをバウンディングボックスで囲む
+- 顔だけをバウンディングボックスで囲む
 
-- グー、チョキ、手の甲、曖昧な手は囲まない
+- 後頭部、横顔すぎる顔、顔がほとんど見えない人物は囲まない
 
-- パーが写っていない画像も、負例としてデータセットに入れる
+- 顔が写っていない画像も、負例としてデータセットに入れる
 
 <br>
 
-<span class="text-xl font-bold">ゴール: Webカメラ画像から `open_palm` を検出する</span>
+<span class="text-xl font-bold">ゴール: Webカメラ画像から `face` を検出する</span>
