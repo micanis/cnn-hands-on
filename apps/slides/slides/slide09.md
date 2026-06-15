@@ -211,7 +211,7 @@ workshop/notebooks/09_detection_evaluation.ipynb
 - 前回Roboflowで作成した `face` データセットを使う
 - Roboflowから `coco` 形式でダウンロードする
 - `train/_annotations.coco.json` を読み、PyTorch用Datasetに変換する
-- `fasterrcnn_resnet50_fpn` で転移学習し、`mAP@0.5` まで確認する
+- `fasterrcnn_resnet50_fpn` で転移学習し、`mAP@0.5` と `mAP@0.5:0.95` を確認する
 
 ::conc::
 今回の資料は、このNotebookの実装順に沿って進める
@@ -566,12 +566,12 @@ APとmAP
 
   <div>
     <div class="font-bold">今回のNotebook</div>
-    <div>IoU 0.5以上を正解とし、Precision-Recall曲線の面積を簡易的に計算して `AP@0.5` と `mAP@0.5` を出す</div>
+    <div>`AP@0.5` と `mAP@0.5` を確認した後、IoU 0.50から0.95までを平均して `mAP@0.5:0.95` も計算する</div>
   </div>
 </div>
 
 ::conc::
-まず `mAP@0.5` の意味を理解し、その後より厳しい `mAP@0.5:0.95` に進む
+`mAP@0.5:0.95` は、位置ずれに対してより厳しい評価になる
 
 ---
 layout: two-cols
@@ -588,6 +588,7 @@ layout: two-cols
 - `Recall`
 - `AP`
 - `mAP@0.5`
+- `mAP@0.5:0.95`
 
 <br>
 
@@ -630,7 +631,7 @@ layout: section
 
 5. `fasterrcnn_resnet50_fpn` の事前学習済み重みを使って転移学習する
 
-6. IoU、Precision、Recall、AP、mAP@0.5の意味を確認する
+6. IoU、Precision、Recall、AP、mAP@0.5、mAP@0.5:0.95の意味を確認する
 
 <br>
 
@@ -662,4 +663,4 @@ layout: section
 
 - **Detectionの評価**
 
-  IoU、TP/FP/FN、Precision、Recall、AP、mAP@0.5を使い、位置とクラスの両方を評価する
+  IoU、TP/FP/FN、Precision、Recall、AP、mAP@0.5、mAP@0.5:0.95を使い、位置とクラスの両方を評価する
