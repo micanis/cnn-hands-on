@@ -5,7 +5,6 @@
   "scripts": {
     "build:all": "bun run scripts/build-all.ts",
     "build:all:answers": "VITE_SHOW_ANSWERS=true bun run scripts/build-all.ts",
-    "dev": "slidev slides/slide01.md --open",
     "dev:slide01": "slidev slides/slide01.md --open",
     "dev:slide02": "slidev slides/slide02.md --open",
     "dev:slide03": "slidev slides/slide03.md --open",
@@ -16,6 +15,7 @@
     "dev:slide08": "slidev slides/slide08.md --open",
     "dev:slide09": "slidev slides/slide09.md --open",
     "dev:slide10": "slidev slides/slide10.md --open",
+    "dev:slide11": "slidev slides/slide11.md --open",
     "dev:answers": "VITE_SHOW_ANSWERS=true slidev slides/slide01.md --open",
     "export": "slidev export"
   },
